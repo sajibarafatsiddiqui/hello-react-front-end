@@ -1,6 +1,5 @@
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import Greeting from './greeting';
 import store from './store';
@@ -12,7 +11,7 @@ const App = () => (
         <Route path="/" element={<Greeting />} />
       </Routes>
     </Router>
- </Provider>
+  </Provider>
 );
 
 export default App;

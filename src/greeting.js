@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllGreetings } from './greetingSlice';
 
 const Greeting = () => {
   const dispatch = useDispatch();
-  const { greeting, isLoading } = useSelector((state) => state.greeting);
+  const { greeting } = useSelector((state) => state.greeting);
 
   useEffect(() => {
     dispatch(fetchAllGreetings());

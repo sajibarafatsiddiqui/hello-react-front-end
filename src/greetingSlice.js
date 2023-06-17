@@ -2,7 +2,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:5000/api/v1/random_greeting';
+const baseUrl = 'http://localhost:4000/api/v1/random_greeting';
 
 export const fetchAllGreetings = createAsyncThunk(
   'greeting/fetchAllGreetings',
